@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_49848cddea9a49eaa2ad26db74110821 {
+                #map_b3e37a0f10214e8d9e40e86f92c3b6c2 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -32,16 +32,31 @@
                 }
             </style>
         
+    
+                <style>
+                    #float_image_2fde12773d6c42acb5878ae60f4edcab {
+                        position:absolute;
+                        bottom:3%;
+                        left:2%;
+                        }
+                </style>
+            
 </head>
 <body>    
     
-            <div class="folium-map" id="map_49848cddea9a49eaa2ad26db74110821" ></div>
+            <div class="folium-map" id="map_b3e37a0f10214e8d9e40e86f92c3b6c2" ></div>
         
+    
+            <img id="float_image_2fde12773d6c42acb5878ae60f4edcab" alt="float_image"
+                 src="https://raw.githubusercontent.com/yohman/interactive-engagement/main/legend3.png"
+                 style="z-index: 999999">
+            </img>
+            
 </body>
 <script>    
     
-            var map_49848cddea9a49eaa2ad26db74110821 = L.map(
-                "map_49848cddea9a49eaa2ad26db74110821",
+            var map_b3e37a0f10214e8d9e40e86f92c3b6c2 = L.map(
+                "map_b3e37a0f10214e8d9e40e86f92c3b6c2",
                 {
                     center: [34.0703726, -118.4453799],
                     crs: L.CRS.EPSG3857,
@@ -55,61 +70,214 @@
 
         
     
-            var tile_layer_09accbf96b5741c59d512d5bc2d86547 = L.tileLayer(
+            var tile_layer_41743f3384314a799188fd64cf0cef53 = L.tileLayer(
                 "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
                 {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_49848cddea9a49eaa2ad26db74110821);
+            ).addTo(map_b3e37a0f10214e8d9e40e86f92c3b6c2);
         
     
-            var circle_1c6c3d09fc8a44d6af82c18b0fa14ace = L.circle(
+            var circle_b5adfc0f8f9c44c3ad1277e96a88b9c0 = L.circle(
                 [34.0703726, -118.4453799],
-                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_49848cddea9a49eaa2ad26db74110821);
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.05, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.3, "radius": 40000, "stroke": true, "weight": 3}
+            ).addTo(map_b3e37a0f10214e8d9e40e86f92c3b6c2);
         
     
-        var popup_42a5efa6246242aba0e427865891918e = L.popup({"maxWidth": "100%"});
+        var popup_1ac8d2d5198e489b8fb3841d3f53cdcd = L.popup({"maxWidth": "100%"});
 
         
-            var html_4c49ed3edce8420fb5301347a292a2f2 = $(`<div id="html_4c49ed3edce8420fb5301347a292a2f2" style="width: 100.0%; height: 100.0%;">20 km radius</div>`)[0];
-            popup_42a5efa6246242aba0e427865891918e.setContent(html_4c49ed3edce8420fb5301347a292a2f2);
+            var html_7c72ddf1b40448c3ba7d12b287001763 = $(`<div id="html_7c72ddf1b40448c3ba7d12b287001763" style="width: 100.0%; height: 100.0%;">40 km radius from UCLA</div>`)[0];
+            popup_1ac8d2d5198e489b8fb3841d3f53cdcd.setContent(html_7c72ddf1b40448c3ba7d12b287001763);
         
 
-        circle_1c6c3d09fc8a44d6af82c18b0fa14ace.bindPopup(popup_42a5efa6246242aba0e427865891918e)
+        circle_b5adfc0f8f9c44c3ad1277e96a88b9c0.bindPopup(popup_1ac8d2d5198e489b8fb3841d3f53cdcd)
         ;
 
         
     
     
-            circle_1c6c3d09fc8a44d6af82c18b0fa14ace.bindTooltip(
+            circle_b5adfc0f8f9c44c3ad1277e96a88b9c0.bindTooltip(
                 `<div>
-                     20 km radius
+                     40 km radius from UCLA
                  </div>`,
                 {"sticky": true}
             );
         
     
-            var circle_29e60f221abc49ea886150c6fc5bd28a = L.circle(
+            var circle_eb9ecc424acc4b3b8c3d11503ac14613 = L.circle(
                 [34.0703726, -118.4453799],
-                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
-            ).addTo(map_49848cddea9a49eaa2ad26db74110821);
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.05, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.3, "radius": 30000, "stroke": true, "weight": 3}
+            ).addTo(map_b3e37a0f10214e8d9e40e86f92c3b6c2);
         
     
-        var popup_64d1e506b0ba405b9566cc61319b4d2f = L.popup({"maxWidth": "100%"});
+        var popup_1da65bad58024fee901fd519c6b6d6c5 = L.popup({"maxWidth": "100%"});
 
         
-            var html_1fc367c269cc458db10821c34d8fc220 = $(`<div id="html_1fc367c269cc458db10821c34d8fc220" style="width: 100.0%; height: 100.0%;">10 km radius</div>`)[0];
-            popup_64d1e506b0ba405b9566cc61319b4d2f.setContent(html_1fc367c269cc458db10821c34d8fc220);
+            var html_b642b2d03d144b938b9e0742b28fb52d = $(`<div id="html_b642b2d03d144b938b9e0742b28fb52d" style="width: 100.0%; height: 100.0%;">30 km radius from UCLA</div>`)[0];
+            popup_1da65bad58024fee901fd519c6b6d6c5.setContent(html_b642b2d03d144b938b9e0742b28fb52d);
         
 
-        circle_29e60f221abc49ea886150c6fc5bd28a.bindPopup(popup_64d1e506b0ba405b9566cc61319b4d2f)
+        circle_eb9ecc424acc4b3b8c3d11503ac14613.bindPopup(popup_1da65bad58024fee901fd519c6b6d6c5)
         ;
 
         
     
     
-            circle_29e60f221abc49ea886150c6fc5bd28a.bindTooltip(
+            circle_eb9ecc424acc4b3b8c3d11503ac14613.bindTooltip(
                 `<div>
-                     10 km radius
+                     30 km radius from UCLA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_227356e022964216890797237126e47f = L.circle(
+                [34.0703726, -118.4453799],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.05, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.3, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_b3e37a0f10214e8d9e40e86f92c3b6c2);
+        
+    
+        var popup_b16d58bb1d5548a0933f40f9ee20104f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6fff0602562747c5b8ed6aacd31e803a = $(`<div id="html_6fff0602562747c5b8ed6aacd31e803a" style="width: 100.0%; height: 100.0%;">20 km radius from UCLA</div>`)[0];
+            popup_b16d58bb1d5548a0933f40f9ee20104f.setContent(html_6fff0602562747c5b8ed6aacd31e803a);
+        
+
+        circle_227356e022964216890797237126e47f.bindPopup(popup_b16d58bb1d5548a0933f40f9ee20104f)
+        ;
+
+        
+    
+    
+            circle_227356e022964216890797237126e47f.bindTooltip(
+                `<div>
+                     20 km radius from UCLA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_c6d21e750faf479184360dcbe6548902 = L.circle(
+                [34.0703726, -118.4453799],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.05, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.3, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_b3e37a0f10214e8d9e40e86f92c3b6c2);
+        
+    
+        var popup_09819ad36bde4923b8263e8c9a360a0f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cb6e076427be4fa2b9d74dc81c3b2548 = $(`<div id="html_cb6e076427be4fa2b9d74dc81c3b2548" style="width: 100.0%; height: 100.0%;">10 km radius from UCLA</div>`)[0];
+            popup_09819ad36bde4923b8263e8c9a360a0f.setContent(html_cb6e076427be4fa2b9d74dc81c3b2548);
+        
+
+        circle_c6d21e750faf479184360dcbe6548902.bindPopup(popup_09819ad36bde4923b8263e8c9a360a0f)
+        ;
+
+        
+    
+    
+            circle_c6d21e750faf479184360dcbe6548902.bindTooltip(
+                `<div>
+                     10 km radius from UCLA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ad2069d736b340b1b7cb95e5a10e62ca = L.marker(
+                [33.98, -118.39],
+                {}
+            ).addTo(map_b3e37a0f10214e8d9e40e86f92c3b6c2);
+        
+    
+            var icon_fc0fc6c053b641c9b349ef7af0a87492 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "user", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_ad2069d736b340b1b7cb95e5a10e62ca.setIcon(icon_fc0fc6c053b641c9b349ef7af0a87492);
+        
+    
+        var popup_deaf71e8a4ac4113a3c95fd4ec15620a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_96a06e3ccb774d138b0dee6dbf08edcc = $(`<div id="html_96a06e3ccb774d138b0dee6dbf08edcc" style="width: 100.0%; height: 100.0%;">hybrid</div>`)[0];
+            popup_deaf71e8a4ac4113a3c95fd4ec15620a.setContent(html_96a06e3ccb774d138b0dee6dbf08edcc);
+        
+
+        marker_ad2069d736b340b1b7cb95e5a10e62ca.bindPopup(popup_deaf71e8a4ac4113a3c95fd4ec15620a)
+        ;
+
+        
+    
+    
+            marker_ad2069d736b340b1b7cb95e5a10e62ca.bindTooltip(
+                `<div>
+                     I live in zipcode 90230 and want to work hybrid
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3cbbd7d9ae944e53a7e6a6c3619e8aaf = L.marker(
+                [34.07, -118.44],
+                {}
+            ).addTo(map_b3e37a0f10214e8d9e40e86f92c3b6c2);
+        
+    
+            var icon_1810780ba27c4487893739678f6c67a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "user", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3cbbd7d9ae944e53a7e6a6c3619e8aaf.setIcon(icon_1810780ba27c4487893739678f6c67a4);
+        
+    
+        var popup_6171bdebb47541a1bc3ec6aae1ae975a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_767b3ed5cd7a4793a0cdfd1eaef722ef = $(`<div id="html_767b3ed5cd7a4793a0cdfd1eaef722ef" style="width: 100.0%; height: 100.0%;">100% in person</div>`)[0];
+            popup_6171bdebb47541a1bc3ec6aae1ae975a.setContent(html_767b3ed5cd7a4793a0cdfd1eaef722ef);
+        
+
+        marker_3cbbd7d9ae944e53a7e6a6c3619e8aaf.bindPopup(popup_6171bdebb47541a1bc3ec6aae1ae975a)
+        ;
+
+        
+    
+    
+            marker_3cbbd7d9ae944e53a7e6a6c3619e8aaf.bindTooltip(
+                `<div>
+                     I live in zipcode 90095 and want to work 100% in person
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8e4c0ee85f3b4e70acde777b4b054a04 = L.marker(
+                [34.0196, -118.487],
+                {}
+            ).addTo(map_b3e37a0f10214e8d9e40e86f92c3b6c2);
+        
+    
+            var icon_df452d7ea3e344ad894b2a0dbcba6160 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "user", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8e4c0ee85f3b4e70acde777b4b054a04.setIcon(icon_df452d7ea3e344ad894b2a0dbcba6160);
+        
+    
+        var popup_572bcecd374148d49c4d75bc904bcc59 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_120db965818241d6beeb482a03afc60a = $(`<div id="html_120db965818241d6beeb482a03afc60a" style="width: 100.0%; height: 100.0%;">100% remote</div>`)[0];
+            popup_572bcecd374148d49c4d75bc904bcc59.setContent(html_120db965818241d6beeb482a03afc60a);
+        
+
+        marker_8e4c0ee85f3b4e70acde777b4b054a04.bindPopup(popup_572bcecd374148d49c4d75bc904bcc59)
+        ;
+
+        
+    
+    
+            marker_8e4c0ee85f3b4e70acde777b4b054a04.bindTooltip(
+                `<div>
+                     I live in zipcode santa monica and want to work 100% remote
                  </div>`,
                 {"sticky": true}
             );
